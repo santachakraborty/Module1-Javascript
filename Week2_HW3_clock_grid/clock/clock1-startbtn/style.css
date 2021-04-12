@@ -1,0 +1,28 @@
+
+#controls{
+  /* margin-top:100px; */
+  
+  width:60px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  text-align:center;
+}
+#clock{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align:center;
+  margin:15% 45%;
+  border-radius: 50%;
+  height:300px;
+  width:300px;
+  font-size:50px;
+  color:lightblue;
+}
+.blue {
+  background-color: #0781D4;
+} 
+.red {
+  background-color:red;
+}

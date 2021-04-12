@@ -1,0 +1,23 @@
+
+body{
+  background:url("image/back_image.jpg");
+}
+.parent{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  width:100vw;
+  height:100vh;
+}
+.child{
+  padding:3rem;
+  border:1px black solid;
+  background-color: blueviolet;
+  font-size:100px;
+  border-radius: 50%;
+  font-weight: bold;
+  
+}
+.child:hover{
+  opacity:0;
+}
