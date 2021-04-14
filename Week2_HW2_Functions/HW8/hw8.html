@@ -1,0 +1,19 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <title>ARRAY OF WORDS THAT ARE LONGER THAN I CHARACTERS LONGER</title>
+  <script src="/HW8/hw8.js"></script>
+</head>
+<body>
+  <h2>Long Words</h2>
+  <p id="para1"></p>
+  <script>
+    let str=["hello","hi","good morning","longest","short"];
+    let count=5;
+    let longest1 = filterLongWords(str,count);
+    document.getElementById("para1").innerHTML = 'Words that are longer than ' +  count + ' characters long are : ' + longest1;
+  </script>
+</body>
+</html>
