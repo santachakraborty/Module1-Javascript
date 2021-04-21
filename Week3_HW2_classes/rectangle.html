@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <title>Rectangle</title>
+</head>
+<body>
+  <h1></h1>
+  <p id="para1"></p>
+  
+  <script>
+    
+     var text="<ul>";
+
+     class Rectangle{
+       constructor(height,width){
+         this.width=width;
+         this.height=height;
+       }
+        
+       displayArea(){
+
+        text = text + "<li>" +" Area of Rectangle is: " + this.area + " Perimeter is: " + this.sides + "</li>";
+       }
+       rectangle_Area(){
+        this.area = this.height * this.width;
+       }
+       total_sides(){
+         let sides = 2 * (this.height + this.width);
+         this.sides=sides.toFixed(2);
+       }
+     }
+    
+    const rec1=new Rectangle(4,5);
+    rec1.rectangle_Area();
+    rec1.total_sides();
+    rec1.displayArea();
+    
+    
+
+    const rec2=new Rectangle(8,9);
+    rec2.rectangle_Area();
+    rec2.total_sides();
+    rec2.displayArea();
+    
+    text+="</ul>";
+
+    document.getElementById("para1").innerHTML = text;
+
+  </script>
+</body>
+</html>
