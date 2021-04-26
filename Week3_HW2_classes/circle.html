@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <title>Circle</title>
+</head>
+<body>
+  <h1>Area Of Circle</h1>
+  <p id="para1"></p>
+  <p id="para2"></p>
+
+  <script>
+     var text="<ul>";
+
+     class Circle{
+       constructor(radius){
+         this.radius=radius;
+         
+       }
+        
+       displayArea(){
+
+          text = text + "<li>" +" Circle area : " + this.area + "   Perimeter of the circle is : " + this.sides + "</li>";
+       }
+       circle_Area(){
+         
+         let area = Math.PI * Math.pow(this.radius, 2);
+        this.area = area.toFixed(2);
+       }
+       total_sides(){
+          let sides = 2 * Math.PI * this.radius;
+          this.sides=sides.toFixed(2);
+          
+       }
+     }
+    
+    const circle1=new Circle(4);
+    circle1.circle_Area();
+    circle1.total_sides();
+    circle1.displayArea();
+    
+    
+
+    const circle2=new Circle(5);
+    circle2.circle_Area();
+    circle2.total_sides();
+    circle2.displayArea();
+    
+    text+="</ul>";
+
+    document.getElementById("para1").innerHTML= text;
+
+  </script>
+  
+</body>
+</html>
