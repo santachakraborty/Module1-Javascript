@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -46,4 +47,54 @@ document.getElementById("para1").innerHTML = text;
 
   </script>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <title>Square</title>
+</head>
+<body>
+  <h1></h1>
+  <p id="para1"></p>
+
+  <script>
+    
+     var text="<ul>";
+     class Square{
+       constructor(length){
+         this.length=length;
+       }
+   
+        displayArea(){
+           text = text + "<li>" +" Area of Square is: " + this.area + " Perimeter is: " + this.sides + "</li>";
+          }
+        square_Area(){
+            this.area = this.length * this.length;
+        }
+        total_sides(){
+           let sides = 4 * this.length;
+           this.sides=sides.toFixed(2);
+        }
+     }
+
+const rec1=new Square(4);
+rec1.square_Area();
+rec1.total_sides();
+rec1.displayArea();
+
+
+
+const rec2=new Square(8);
+rec2.square_Area();
+rec2.total_sides();
+rec2.displayArea();
+
+text+="</ul>";
+
+document.getElementById("para1").innerHTML = text;
+
+  </script>
+</body>
+>>>>>>> 44cc1bd608365b785b955d3508dea2b8288d0ae3
 </html>
