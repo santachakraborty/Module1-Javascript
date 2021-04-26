@@ -5,7 +5,6 @@
 .board {
 
   position:relative;  
-  position: absolute;
   top: 0px;
   bottom: 0px;
   width: 100%;
@@ -89,3 +88,7 @@
   text-align: center;
   background-color:lightskyblue;
 }
+
+ #btn{
+  visibility: hidden;
+} 
