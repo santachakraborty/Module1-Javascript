@@ -4,6 +4,7 @@ let userName="      Santa Chakraborty    ";
 let phNo="123-456-7898";
 let minBalance=1000;
 let transferAmount=500;
+//here transaction type is 'deposit' and depositType is 'check'
 let transactionType='deposit';
 let msg1='login successful';
 let depositType='check';
