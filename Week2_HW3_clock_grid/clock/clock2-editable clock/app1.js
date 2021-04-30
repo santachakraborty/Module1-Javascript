@@ -19,7 +19,7 @@ function startTimer(){
   txtTempo.addEventListener("keydown", function keydown(evt){
     
     // 13 is the code for ENTER
-    if (evt.keyCode == 13) {
+    if (evt.keyCode === 13) {
       botaoClicked();
       // its important to remove the keydown listener, otherwise in a subsequent edit
       // we will end up with several keydown listeners running
